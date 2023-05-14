@@ -1,0 +1,10 @@
+﻿  main.cpp
+  find.cpp
+C:\vs\vscmake\vscmake\src\find.cpp(18,20): warning C4018: '<': signed/unsigned mismatch
+C:\vs\vscmake\vscmake\src\find.cpp(20,21): warning C4244: 'argument': conversion from 'const wchar_t' to 'const _Elem', possible loss of data
+          with
+          [
+              _Elem=char
+          ]
+main.obj : error LNK2001: unresolved external symbol "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall FileClass::find_file(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)" (?find_file@FileClass@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV23@0V23@H@Z)
+C:\vs\vscmake\vscmake\\build\Release\x86\vscmake.exe : fatal error LNK1120: 1 unresolved externals
