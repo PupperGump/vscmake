@@ -1,6 +1,6 @@
 #include <vscmake.hpp>
 
-int test(const int x = 10);
+
 
 inline int test(const int x)
 {

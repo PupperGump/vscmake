@@ -2,6 +2,8 @@
 #pragma warning(push, 4)
 #include <vscmake.hpp>
 
+int test(const int x = 10);
+
 class FileClass
 {
 public:
@@ -12,18 +14,17 @@ public:
 	FileClass();
 	~FileClass();
 
-	bool enter_directory(std::string dir);
-	std::string dir();
-	std::string dir(const std::string& path);
-	std::string getdir() { return current_directory; }
-	void escape_directory();
+	inline bool enter_directory(std::string dir);
+	inline std::string dir();
+	inline std::string dir(const std::string& path);
+	inline std::string getdir() { return current_directory; }
+	inline void escape_directory();
 
-	bool check_dir(std::string item);
+	inline bool check_dir(std::string item);
 
-	inline std::string find_file(const std::string& filename, const std::string& extension, const std::string searchdir = ".", const int depth = 1);
+	std::string find_file(const std::string& filename, const std::string& extension, const std::string searchdir = ".", const int depth = 1);
 
-	bool get_real_path(std::string dir);
-
+	inline bool get_real_path(std::string dir);
 };
 
 //std::string find_file(std::string filename, const std::string extension = ".", const std::string searchdir = ".", const int depth = 1, const bool is_caller = 1);
